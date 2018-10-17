@@ -1,9 +1,11 @@
 public class Teacher {
+
+    //fields of Teacher class
     private String firstName;
     private String lastName;
-    private String email;
     private String subject;
 
+    //getters and setters of the fields
     public String getFirstName() {
         return firstName;
     }
@@ -20,14 +22,6 @@ public class Teacher {
         this.lastName = lastName;
     }
 
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
     public String getSubject() {
         return subject;
     }
@@ -36,8 +30,8 @@ public class Teacher {
         this.subject = subject;
     }
 
-    Teacher(String firstName, String lastName, String email, String subject){
-        this.email = email;
+    //Teacher class constructor
+    Teacher(String firstName, String lastName, String subject){
         this.firstName = firstName;
         this.lastName = lastName;
         this.subject = subject;

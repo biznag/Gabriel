@@ -3,47 +3,33 @@ import java.util.ArrayList;
 public class School {
     ArrayList<Teacher> teachers = new ArrayList<>();
     ArrayList<Student> students = new ArrayList<>();
-    private String Name;
-    private int Age;
-    private String Subject;
+    private String schoolName;
+    private int schoolAge;
+    private String schoolMaskot;
 
-    public ArrayList<Teacher> getTeachers() {
-        return teachers;
+    public String getSchoolName() {
+        return schoolName;
     }
 
-    public void setTeachers(ArrayList<Teacher> teachers) {
-        this.teachers = teachers;
+    public void setSchoolName(String schoolName) {
+        this.schoolName = schoolName;
     }
 
-    public ArrayList<Student> getStudents() {
-        return students;
+    public int getSchoolAge() {
+        return schoolAge;
     }
 
-    public void setStudents(ArrayList<Student> students) {
-        this.students = students;
+    public void setSchoolAge(int schoolAge) {
+        this.schoolAge = schoolAge;
     }
 
-    public String getName() {
-        return Name;
+    public String getSchoolMaskot() {
+        return schoolMaskot;
     }
 
-    public void setName(String name) {
-        Name = name;
+    public void setSchoolMaskot(String schoolMaskot) {
+        this.schoolMaskot = schoolMaskot;
     }
 
-    public int getAge() {
-        return Age;
-    }
 
-    public void setAge(int age) {
-        Age = age;
-    }
-
-    public String getSubject() {
-        return Subject;
-    }
-
-    public void setSubject(String subject) {
-        Subject = subject;
-    }
 }

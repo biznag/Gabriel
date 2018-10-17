@@ -1,6 +1,9 @@
 public class Main {
     public static void main(String[] args) {
-        Teacher jack = new Teacher("jack", "donald", "gmail", "history");
-        System.out.println(jack.getEmail());
+        Student jack = new Student("jack", "donald", 6);
+        Student john = new Student("john", "donald", 6);
+        System.out.println(jack.getStudentId());
+        System.out.println(john.getStudentId());
+
     }
 }
