@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <TabPane prefHeight="437.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Create Friend">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <VBox alignment="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="200.0" prefWidth="100.0" spacing="15.0">
+                           <children>
+                              <Label text="Friend Name:" />
+                              <Label text="Age:" />
+                              <Label lineSpacing="15.0" text="Phone Number:" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" layoutX="114.0" layoutY="14.0" prefHeight="200.0" prefWidth="100.0" spacing="8.0">
+                           <children>
+                              <TextField fx:id="textGetName" promptText="NAME" />
+                              <TextField fx:id="textGetQuantity" promptText="AGE" />
+                              <TextField fx:id="textGetCost" promptText="Phone #" />
+                           </children>
+                        </VBox>
+                        <Button layoutX="236.0" layoutY="102.0" mnemonicParsing="false" onAction="#addProduct" text="Add Friend" />
+                        <Button fx:id="btnLoad" layoutX="412.0" layoutY="102.0" mnemonicParsing="false" text="Load Recent" />
+                        <Button fx:id="btnSave" layoutX="353.0" layoutY="102.0" mnemonicParsing="false" onAction="#saveProduct" text="Save" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Display Friends">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="buttonPurchase" layoutX="352.0" layoutY="246.0" mnemonicParsing="false" onAction="#purchaseProduct" text="Delete Friend" />
+                        <ListView fx:id="productList" layoutX="14.0" layoutY="14.0" onMouseClicked="#displayProperty" prefHeight="341.0" prefWidth="246.0" />
+                        <Label layoutX="360.0" layoutY="43.0" text="Friend Information" />
+                        <Label layoutX="332.0" layoutY="104.0" text="Name" />
+                        <Label layoutX="332.0" layoutY="144.0" text="Age" />
+                        <Label layoutX="332.0" layoutY="186.0" text="Phone #" />
+                        <Label fx:id="lblName" layoutX="386.0" layoutY="104.0" />
+                        <Label fx:id="lblQuantity" layoutX="386.0" layoutY="144.0" />
+                        <Label fx:id="lblCost" layoutX="386.0" layoutY="186.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</VBox>
