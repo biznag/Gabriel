@@ -51,6 +51,7 @@ public class Controller {
         for(Product p : products){
             productList.getItems().add(p);
         }
+        System.out.println("Out product");
     }
 
     public void displayProperty(MouseEvent mouseEvent) {

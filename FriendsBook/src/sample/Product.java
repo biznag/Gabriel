@@ -32,10 +32,11 @@ public class Product {
         FileWriter fw = new FileWriter("products.txt",true);
         BufferedWriter bw = new BufferedWriter(fw);
         bw.write(name + ",\r");
-        bw.write(Double.toString(quantity) + ",\r");
+        bw.write(Integer.toString(quantity) + ",\r");
         bw.write(Double.toString(cost) + "\r");
         bw.write(";\r");
         bw.close();
+        System.out.println("loading");
     }
 
     public double getCost(){return cost;}

@@ -35,15 +35,13 @@ public class CreateProduct {
         String name = "";
         int number = 0;
         double age = 0;
-        for(int i =0;i<string.length();i++){
-            if(string.substring(i,i+1).equals(",")){
-                pos = i;
-                pos2 = pos;
+                pos = string.indexOf(",");
+                pos2 = string.indexOf(",",pos+1);
                 name = string.substring(0,pos);
-                age = Double.parseDouble(string.substring(pos,pos2));
+                age = Double.parseDouble(string.substring(pos+1,pos2));
                 number = Integer.parseInt(string.substring(pos2+1));
-            }
-        }
+
+
         products.add(new Product(name, number, age));
     }
 }
